@@ -1,0 +1,27 @@
+*, *::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $font-body;
+    background-color: $very-light-gray;
+}
+
+h1 {
+    font-size: 2.2rem;
+
+    @include respond-to(tab) {
+        font-size: 3.8rem;
+    }
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
